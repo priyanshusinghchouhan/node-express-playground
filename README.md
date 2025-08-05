@@ -1,6 +1,6 @@
 # 🚀 node-express-playground
 
-Welcome to my **Express + Node.js Playground** — a personal repository where I document my backend development journey by building mini projects, experimenting with core concepts, and applying what I learn.
+Welcome to my **Node.js + Express Playground** — a personal repository where I document my backend development journey by building mini projects, experimenting with core concepts, and applying what I learn.
 
 ---
 
