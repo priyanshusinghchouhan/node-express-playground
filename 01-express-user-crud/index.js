@@ -10,6 +10,7 @@ let users = [
 ];
 
 
+
 //creating users
 app.post("/users", (req, res) => {
     const {name, email} = req.body;
@@ -80,4 +81,5 @@ app.delete("/users/:userid", (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server listening at ${PORT}`);
+
 })
