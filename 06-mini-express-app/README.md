@@ -1,9 +1,9 @@
-MIDDLEWARE & ROUTE PROTECTION PRACTICE (NODE + EXPRESS)
+# MIDDLEWARE & ROUTE PROTECTION PRACTICE (NODE + EXPRESS)
 
 This project demonstrates how to use custom middleware in Express.js to protect routes based on authentication logic. It includes both query parameter-based checking (commented example) and token-based checking via the Authorization header.
 
 ------------------------------------------------------------
-FEATURES
+## FEATURES
 ------------------------------------------------------------
 - Custom middleware (`isLoggedIn`) to verify access before allowing route execution
 - Route protection using a token provided in request headers
@@ -12,13 +12,13 @@ FEATURES
 - Basic Express.js server setup
 
 ------------------------------------------------------------
-TECH STACK
+## TECH STACK
 ------------------------------------------------------------
 - Node.js – Backend runtime
 - Express.js – Routing & middleware handling
 
 ------------------------------------------------------------
-PROJECT STRUCTURE
+## PROJECT STRUCTURE
 ------------------------------------------------------------
 middleware-protection/
 │
@@ -30,7 +30,7 @@ middleware-protection/
 ├── package.json
 
 ------------------------------------------------------------
-INSTALLATION & SETUP
+## INSTALLATION & SETUP
 ------------------------------------------------------------
 1. Clone the repository:
    git clone <your-repo-url>
@@ -44,7 +44,7 @@ INSTALLATION & SETUP
    (You can also run with `node index.js` but nodemon auto-restarts on file changes)
 
 ------------------------------------------------------------
-API ENDPOINTS
+## API ENDPOINTS
 ------------------------------------------------------------
 1. HOME ROUTE
    METHOD: GET
@@ -76,7 +76,7 @@ API ENDPOINTS
    /users/profile?isAuthor=true
 
 ------------------------------------------------------------
-HOW THE MIDDLEWARE WORKS
+## HOW THE MIDDLEWARE WORKS
 ------------------------------------------------------------
 1. Looks for `Authorization` header in the format:
    Bearer <token>
@@ -86,7 +86,7 @@ HOW THE MIDDLEWARE WORKS
 5. If token doesn't match → returns 401 Unauthorized
 
 ------------------------------------------------------------
-WHAT I PRACTICED & LEARNED
+## WHAT I PRACTICED & LEARNED
 ------------------------------------------------------------
 - Creating custom middleware in Express.js
 - Using `next()` to pass control to the next function
