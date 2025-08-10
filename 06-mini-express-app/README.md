@@ -20,18 +20,20 @@ This project demonstrates how to use custom middleware in Express.js to protect 
 ------------------------------------------------------------
 ## PROJECT STRUCTURE
 ------------------------------------------------------------
-middleware-protection/
+```
+06-mini-express-app/
 │
-├── index.js               → Main server file
+├── app.js               → Main server file
 ├── routes/
 │   └── userRoutes.js      → Defines the `/users/profile` route
 ├── middlewares/
 │   └── isLoggedIn.js      → Middleware that validates token or query param
 ├── package.json
-
+```
 ------------------------------------------------------------
 ## INSTALLATION & SETUP
 ------------------------------------------------------------
+```
 1. Clone the repository:
    git clone <your-repo-url>
    cd middleware-protection
@@ -42,10 +44,11 @@ middleware-protection/
 3. Start the server:
    npx nodemon index.js
    (You can also run with `node index.js` but nodemon auto-restarts on file changes)
-
+```
 ------------------------------------------------------------
 ## API ENDPOINTS
 ------------------------------------------------------------
+```
 1. HOME ROUTE
    METHOD: GET
    URL: /
@@ -74,6 +77,7 @@ middleware-protection/
    (ALTERNATIVE: Using query parameter check — commented in middleware code)
    Example:
    /users/profile?isAuthor=true
+```
 
 ------------------------------------------------------------
 ## HOW THE MIDDLEWARE WORKS
